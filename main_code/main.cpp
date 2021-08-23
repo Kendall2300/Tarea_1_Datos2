@@ -36,10 +36,17 @@ int main(){
         int numero=stoi(linea,nullptr);
         array.push_back(numero);
     }
-    int indice=(sizeof(array)/sizeof(array[0]));
+    archivo_entrada.close();
+    int indice=array.size();
     insertionSort(array,indice);
-    //cout << array[5] << endl;
-    
+    ofstream archivo_salida("archivo_resultado.txt");
+    for (int i = 0; i < indice; i++)
+    {
+        archivo_salida << array[i] << ",";
+    }
+    archivo_salida.close();
+    //cout << indice << " Valor del indice" << endl;
+    //cout << array[0] << endl;
     return 0;
 }
 
