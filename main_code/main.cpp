@@ -1,7 +1,8 @@
 /**
  * @file main.cpp
  * @author Kendall Adolfo Martinez Carvajal (kendallmc@estudiantec.cr)
- * @brief Este codigo lee archivo que contiene enteros separados por coma, guarda los enteros
+ * @brief 
+ * Este codigo lee archivo que contiene enteros separados por coma, guarda los enteros
  * en un vector y los ordena por medio del algoritmo insertion sort para luego escribirlos en otro
  * archivo especificado
  * @version 0.1
@@ -23,7 +24,8 @@
 using namespace std;
 
 /**
-*@brief Este metodo se encarga de recibir un vector que luego ordena por medio del algoritmo insertion sort
+*@brief 
+*Este metodo se encarga de recibir un vector que luego ordena por medio del algoritmo insertion sort
 *@param lista_datos corresponde al vector creado del archivo que se desea ordenar
 */
 void insertionSort(vector<int> &lista_datos){
@@ -44,7 +46,8 @@ void insertionSort(vector<int> &lista_datos){
 }
 
 /**
-*@brief Este metodo se encarga recibir un string con el nombre del archivo a cargar o leer asi como
+*@brief 
+*Este metodo se encarga recibir un string con el nombre del archivo a cargar o leer asi como
 *de escribir el los datos leidos en un vector
 *@param archivo_entrada corresponde al nombre del archivo a leer
 */
@@ -60,7 +63,8 @@ archivo_entrada.close();
 }
 
 /**
-*@brief Este metodo se encarga de recibir cadenas de string con el fin de obtener el nombre del archivo a
+*@brief 
+*Este metodo se encarga de recibir cadenas de string con el fin de obtener el nombre del archivo a
 *leer y el nombre del archivo para guardar los enteros ordenados
 *
 *@param cadena recibe un string con la sentencia del comando para iniciar el programa 
@@ -79,7 +83,8 @@ nombre_salida=cadena.substr(0,segundo_delimitador);
 }
 
 /**
- * @brief Escribe los datos ordenados en un archivo de nombre especificado al inicio del programa
+ * @brief 
+ * Escribe los datos ordenados en un archivo de nombre especificado al inicio del programa
  * 
  * @param nombre_salida recibe un string que corresponde al nombre del archivo a crear
  * @param lista_datos recibe un vector que corresponde a la lista de enteros ordenados
@@ -95,7 +100,8 @@ void escribir_archivo(string &nombre_salida, vector<int> &lista_datos){
 }
 
 /**
- * @brief El metodo principal del programa desde aqui se llaman todas las funciones para llevar a cabo los procedimientos requeridos
+ * @brief 
+ * El metodo principal del programa desde aqui se llaman todas las funciones para llevar a cabo los procedimientos requeridos
  * 
  * @return int Retorna un valor para terminar el programa
  */
